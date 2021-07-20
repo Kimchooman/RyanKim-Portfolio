@@ -1,31 +1,56 @@
+.page-container {
+  background-color: #8ecccc;
+  padding: 10px;
+}
+
+html {background-color: #8ecccc;}
+
 .grid-container {
-  display: flex;
-  flex-wrap: wrap;
-  min-width: 20em;
-  min-height: 20em;
-  grid-template-columns: auto auto auto;
-  background: #E7F3F1;
-  border: .75em solid white;
-  padding: 2em;
-}
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 20em;
+    min-height: 20em;
+    grid-template-columns: auto auto auto;
+    background: #50717b;
+    border-radius: 1em;
+    margin: 10px;
+    padding: 5px;
+  }
+  .grid-item{
+    display: flex;
+    min-width: 15em;
+    min-height: 20em;
+    max-width: 15em;
+    max-height: 20em;
+    border-radius: 1em;
+    background: url(fire.gif);
+    color: transparent;
+    background-size: 100% 100%;
+    transition: 1s;
+    padding: 15px;
+    margin: 20px;
+  }
 
-.grid-item {
-  display: flex;
-  background-color: rgba(255, 255, 255, 0.8);
-  min-width: 5em;
-  min-height: 5em;
-  max-height: 10em;
-  max-width: 10em;
-  margin: .75em;
-  font-size: 20px;
-  border-radius: .5em;
-  background: white;
-  padding: 2.75em 2.5em;
-  overflow: visible;
-  box-shadow: 0 1.5em 2.5em -.5em rbga(#000000, .1);
+  #helper {
+    opacity: 0.5;
+    font-size: small;
+  }
 
-}
+  .link-text {
+    display: block;
+    color: transparent;
+    margin: auto 0 0;
+    text-decoration-line: none;
+    
+  }
+  
+  .grid-item:hover{
+    background: #3b6660;
+    color: wheat;
+    transform: scale(1.1);
+  }
 
-.grid-item:hover {
-  background: cornflowerblue;
+  .grid-item:hover .link-text {
+    color: tan;
+    cursor: pointer;
   }
